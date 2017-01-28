@@ -1,0 +1,358 @@
+body {
+	background: #F1F2F7;
+	padding-top: 75px;
+}
+h1, h2, h3, h4, h5, h6, p, a, i {
+	font-family: "Roboto", sans-serif;
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	animation-duration:1s;
+}
+.fade-in {
+-webkit-animation-delay: 0.2s;
+-moz-animation-delay: 0.2s;
+animation-delay: 0.2s;
+}
+.loginform {
+	width: 500px;
+	height: 300px;
+	background: #FFF;
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	margin-top: -150px;
+  	margin-left: -250px;
+  	border-radius: 5px;
+  	text-align: center;
+  	padding: 0 20px 0 20px;
+  	border-top: 5px solid #F77B6F;
+}
+.loginform h3 {
+	font-weight: 300;
+}
+.navbar {
+	border-radius: 0;
+}
+.navbar-atas {
+	background: #FFF;
+}
+.navbar-default .navbar-header > a {
+	font-weight: 400;
+	color: #000;
+	font-size: 21px;
+}
+.navbar-default .navbar-header > a:hover {
+	color: #555;
+}
+.navbar-default .navbar-nav > li > a{
+	font-weight: 300;
+	color: #667FA0;
+	transition:0.5s;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	transition:0.5s;
+	font-weight: 300;
+	color: #FFF;
+}
+.breadcrumb {
+	background: #FFF;
+	font-size: 13px;
+}
+.breadcrumb > li > a{
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	color: #667FA0;
+}
+.breadcrumb > li > a:hover{
+	font-weight: 400;
+	color: #667FA0;
+	text-decoration: none;
+}
+.panel-statistik-big {
+	width: 100%;
+	height: 400px;
+	background: #FFF;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+.panel-statistik-big .panel-judul-big {
+	background: #A9D96C;
+	height: 85%;
+	text-align: center;
+	border-radius: 4px 4px 0 0;
+}
+.panel-statistik {
+	width: 100%;
+	height: 100px;
+	background: #FFF;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+.panel-judul {
+	width: 40%;
+	height: 100%;
+	border-radius: 4px 0 0 4px;
+	padding: 15px 15px;
+	font-size: 50px;
+	text-align: center;
+	color: #FFF;
+	float: left;
+}
+.panel-isi {
+	width: 58%;
+	height: 100%;
+	float: right;
+	border-radius: 0 4px 4px 0;
+	text-align: center;
+}
+.panel-isi h1 {
+	font-weight: 300;
+	color: #C6CAD6;
+}
+.panel-isi p {
+	font-weight: 300;
+	color: #C6CAD6;
+}
+.panel-heading {
+	border-bottom: 1px solid #EAEAEA;
+}
+.panel-heading span {
+	margin-top: -10px;
+    font-size: 15px;
+}
+.clickable {
+    cursor: pointer;
+}
+footer {
+	width: 100%;
+	height: 40px;
+	background: #5B6E84;
+	padding: 10px;
+	color: #FFF;
+	bottom: 0;
+	left: 0;
+}
+.activity {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.activity.alt {
+    width: 100%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.activity span {
+    float: left;
+}
+
+.activity.alt span {
+    float: right;
+}
+.activity span, .activity.alt span {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #eee;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.activity.terques span {
+    background: #8dd7d6;
+}
+
+.activity.terques h4 {
+    color: #8dd7d6;
+}
+.activity.purple span {
+    background: #b984dc;
+}
+
+.activity.purple h4 {
+    color: #b984dc;
+}
+.activity.blue span {
+    background: #90b4e6;
+}
+
+.activity.blue h4 {
+    color: #90b4e6;
+}
+.activity.green span {
+    background: #aec785;
+}
+
+.activity.green h4 {
+    color: #aec785;
+}
+
+.activity h4 {
+    margin-top:0 ;
+    font-size: 16px;
+}
+
+.activity p {
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.activity .activity-desk i, .activity.alt .activity-desk i {
+    float: left;
+    font-size: 18px;
+    margin-right: 10px;
+    color: #bebebe;
+}
+
+.activity .activity-desk {
+    margin-left: 70px;
+    position: relative;
+}
+
+.activity.alt .activity-desk {
+    margin-right: 70px;
+    position: relative;
+}
+
+.activity.alt .activity-desk .panel {
+    float: right;
+    position: relative;
+}
+
+.activity-desk .panel {
+    background: #F4F4F4 ;
+    display: inline-block;
+}
+
+
+.activity .activity-desk .arrow {
+    border-right: 8px solid #F4F4F4 !important;
+}
+.activity .activity-desk .arrow {
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    display: block;
+    height: 0;
+    left: -7px;
+    position: absolute;
+    top: 13px;
+    width: 0;
+}
+
+.activity-desk .arrow-alt {
+    border-left: 8px solid #F4F4F4 !important;
+}
+
+.activity-desk .arrow-alt {
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    display: block;
+    height: 0;
+    right: -7px;
+    position: absolute;
+    top: 13px;
+    width: 0;
+}
+
+.activity-desk .album {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.activity-desk .album a{
+    margin-right: 10px;
+}
+
+.activity-desk .album a:last-child{
+    margin-right: 0px;
+}
+.manajemen-user {
+	padding: 20px;
+	font-size: 60px;
+	text-align: center;
+	color: #FFF;
+}
+.manajemen-user:hover {
+	opacity: 0.9;
+}
+.bs-example{
+    font-family: sans-serif;
+    position: relative;
+    margin: 100px;
+}
+.typeahead, .tt-query, .tt-hint {
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+    outline: medium none;
+    padding: 0px 12px;
+    width: 396px;
+}
+.typeahead {
+    background-color: #FFFFFF;
+}
+.typeahead:focus {
+    border: 2px solid #0097CF;
+}
+.tt-query {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+    color: #999999;
+}
+.tt-dropdown-menu {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 422px;
+}
+.tt-suggestion {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+    background-color: #0097CF;
+    color: #FFFFFF;
+}
+.tt-suggestion p {
+    margin: 0;
+}
+.mt {
+    width: 800px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -400px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
